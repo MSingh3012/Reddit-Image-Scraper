@@ -66,7 +66,7 @@ for post in posts:
         processAlbum(url, post.name);
 
     # Direct link: "http://i.imgur.com/XYZ123.jpg"
-    elif ("i.imgur.com/" in url):
+    elif (url.endswith(".jpg") or url.endswith(".png") or url.endswith(".gif")):
         processDirectLink(url, config.folderName);
 
     # Normal link: "http://imgur.com/XYZ123"

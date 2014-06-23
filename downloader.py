@@ -72,12 +72,16 @@ def processNormalLink(url, folder):
         return;
 
     # Extract url from html file
-    url = soup.select('.image a')[0]['href'];
+    url = soup.select('.image a');
 
-    # Download image
-    url = formatUrl(url);
-    processDirectLink(url, folder);
+    if (len(url) == 1):
+        url = url[0]['href'];
 
+        # Download image
+        url = formatUrl(url);
+        processDirectLink(url, folder);
+
+    # lastSlash = url.rfind("/");
 
 def processAlbum(url, albumTitle):
     '''
