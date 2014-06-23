@@ -44,7 +44,7 @@ def processDirectLink(url, folder):
         try:
             urllib.request.urlretrieve(url, fileName);
         except:
-            print("Error while opening url:\t" + url);
+            print("Error while opening:\t" + url);
             return;
 
         # Increment counter to generate new file name for the next download
@@ -62,13 +62,13 @@ def processNormalLink(url, folder):
     # Read html file to url
     try:
         htmlPage = urllib.request.urlopen(url);
-    except IOError as e:
-        print("Error while opening url:\t" + e.message);
+    except:
+        print("Error while opening:\t" + url);
         return;
     try:
         soup = BeautifulSoup(htmlPage);
     except:
-        print("Error while parsing html:\t" + url);
+        print("Error while parsing:\t" + url);
         return;
 
     # Extract url from html file
@@ -94,13 +94,13 @@ def processAlbum(url, albumTitle):
     # Read html file to url
     try:
         htmlPage = urllib.request.urlopen(url);
-    except IOError as e:
-        print("Error while opening url:\t" + e.message);
+    except:
+        print("Error while opening:\t" + url);
         return;
     try:
         soup = BeautifulSoup(htmlPage);
     except:
-        print("Error while parsing html:\t" + url);
+        print("Error while parsing:\t" + url);
         return;
 
     # Generate subfoldername for album
