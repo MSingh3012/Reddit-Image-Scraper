@@ -11,11 +11,6 @@ from downloader import processAlbum, processDirectLink, processNormalLink
 
 
 warnings.filterwarnings('ignore')
-'''
-To do:
-    - Specific error handling
-    - Retry after bad gateway
-'''
 
 if (len(sys.argv) != 3):
     print("Usage: python imagescraper.py Username NumberOfPostsToScrape");
