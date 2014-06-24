@@ -1,6 +1,11 @@
 __author__ = 'Rookev'
 
-import urllib.request
+try:
+    from urllib.request import urlopen, urlretrieve
+except ImportError:
+    from urllib import urlretrieve
+    from urllib2 import urlopen
+
 import os
 
 from bs4 import BeautifulSoup
@@ -42,7 +47,7 @@ def process_direct_link(url, folder):
         # Download file
         print("Downloading image " + str(config.currentfile) + ":\t" + url)
         try:
-            urllib.request.urlretrieve(url, filename)
+            urlretrieve(url, filename)
         except:
             print("Error while opening:\t" + url)
             return
@@ -61,7 +66,7 @@ def process_normal_link(url, folder):
 
     # Read html file to url
     try:
-        htmlpage = urllib.request.urlopen(url)
+        htmlpage = urlopen(url)
     except:
         print("Error while opening:\t" + url)
         return
@@ -92,7 +97,7 @@ def process_album(url, albumtitle):
 
     # Read html file to url
     try:
-        htmlpage = urllib.request.urlopen(url)
+        htmlpage = urlopen(url)
     except:
         print("Error while opening:\t" + url)
         return
