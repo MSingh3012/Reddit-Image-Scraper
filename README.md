@@ -15,7 +15,6 @@ This command scrapes the last 5 posts of `/u/User123`, detects his Imgur submiss
 [Python 2](https://www.python.org/download/releases/2.7.7/) or [Python 3](https://www.python.org/download/releases/3.4.1/) must be installed on your computer.
 
 ### Dependencies ###
-----------
 To use this script, you will need the libraries [praw](https://github.com/praw-dev/praw) and [beautifulsoup](http://www.crummy.com/software/BeautifulSoup/). They can be installed by the `pip` command through your command line as follows:
 ```
 $ pip install praw
