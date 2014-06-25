@@ -8,7 +8,8 @@ Welcome to Reddit-Image-Scrapper's documentation!
 
 .. toctree::
 
-    README.rst
+   front.rst
+   README.rst
 
 Reference
 ----------
