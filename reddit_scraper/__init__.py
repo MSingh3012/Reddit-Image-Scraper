@@ -5,5 +5,5 @@ from .__main__ import main
 
 from .downloader import *
 
-__title__ = 'Reddit Image Scrapper'
+__title__ = 'Reddit Image Scraper'
 __author__ = 'Rookev'
