@@ -1,5 +1,4 @@
-__author__ = 'Rookev'
-
+# -*- coding: utf-8 -*-
 try:
     from urllib.request import urlopen, urlretrieve
 except ImportError:
@@ -10,8 +9,7 @@ import os
 
 from bs4 import BeautifulSoup
 
-import config
-
+from . import config
 
 def process_direct_link(url, folder):
     """
@@ -127,6 +125,7 @@ def process_album(url, albumtitle):
 def format_url(url):
     """
     Formats url strings by front adding "http:" if needed
+
     :param url: "//imgur.com/XYZ123"
     :return: "http://imgur.com/XYZ123"
     """

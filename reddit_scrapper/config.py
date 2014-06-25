@@ -1,4 +1,3 @@
-__author__ = 'Rookev'
 import os
 
 # Program identification for Reddit
