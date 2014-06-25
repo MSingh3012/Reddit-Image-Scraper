@@ -6,10 +6,10 @@ import sys
 
 import praw
 
-from .config import *
+from . import config
 from .downloader import process_album, process_direct_link, process_normal_link
 
-if __name__ == '__main__':
+def main():
     warnings.filterwarnings('ignore')
 
     if len(sys.argv) != 3:
@@ -28,7 +28,7 @@ if __name__ == '__main__':
         sys.exit(-1)
 
     # foldername on disk: "/[Path to Desktop]/[Target user name]/"
-    foldername += username + os.path.sep
+    config.foldername += username + os.path.sep
 
     # Arguments summary
     print()
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     print()
 
     # Reddit access
-    r = praw.Reddit(user_agent=useragent)
+    r = praw.Reddit(user_agent=config.useragent)
 
     # Access reddit user
     try:
@@ -52,8 +52,8 @@ if __name__ == '__main__':
     posts = user.get_submitted(limit=limit)
 
     # Create folder "/[Path to Desktop]/[Target user name]/"
-    if not (os.path.exists(foldername)):
-        os.makedirs(foldername)
+    if not (os.path.exists(config.foldername)):
+        os.makedirs(config.foldername)
 
     # Process each post
     for post in posts:
@@ -67,14 +67,18 @@ if __name__ == '__main__':
 
         # Direct link: "http://i.imgur.com/XYZ123.jpg"
         elif url.endswith(".jpg") or url.endswith(".png") or url.endswith(".gif"):
-            process_direct_link(url, foldername)
+            process_direct_link(url, config.foldername)
 
         # Normal link: "http://imgur.com/XYZ123"
         elif "imgur.com/" in url:
-            process_normal_link(url, foldername)
+            process_normal_link(url, config.foldername)
 
     # Result summary
     print()
     print("Scraped posts:\t" + str(limit))
-    print("Downloaded images:\t" + str(currentfile - 1))
+    print("Downloaded images:\t" + str(config.currentfile - 1))
     print()
+
+
+if __name__ == '__main__':
+    sys.exit(main())

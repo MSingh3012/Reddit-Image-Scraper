@@ -9,8 +9,7 @@ import os
 
 from bs4 import BeautifulSoup
 
-from .config import *
-
+from . import config
 
 def process_direct_link(url, folder):
     """
@@ -41,10 +40,10 @@ def process_direct_link(url, folder):
     if fileformat != "":
 
         # Generate file name: /[Folder]/[Index].[Format]
-        filename = folder + str(currentfile) + fileformat
+        filename = folder + str(config.currentfile) + fileformat
 
         # Download file
-        print("Downloading image " + str(currentfile) + ":\t" + url)
+        print("Downloading image " + str(config.currentfile) + ":\t" + url)
         try:
             urlretrieve(url, filename)
         except:
@@ -52,7 +51,7 @@ def process_direct_link(url, folder):
             return
 
         # Increment counter to generate new file name for the next download
-        currentfile += 1
+        config.currentfile += 1
 
 
 def process_normal_link(url, folder):
@@ -107,7 +106,7 @@ def process_album(url, albumtitle):
         return
 
     # Generate subfoldername for album
-    subfolder = foldername + albumtitle + os.path.sep
+    subfolder = config.foldername + albumtitle + os.path.sep
 
     # Create subfolder
     if not os.path.exists(subfolder):
