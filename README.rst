@@ -50,6 +50,10 @@ Choose a reddit user and download each of his or her Imgur submissions to your l
 
 This command scrapes the last 5 posts of ``/u/User123``, detects his Imgur submissions and downloads it to your desktop in a newly created folder called `/User123/`
 
+Documentation
+-------------
+
+Documentation available at http://reddit-image-scrapper.readthedocs.org/
 
 .. _`Python 2`: https://www.python.org/download/releases/2.7/
 .. _`Python 3`: https://www.python.org/download/releases/3.4.1/
