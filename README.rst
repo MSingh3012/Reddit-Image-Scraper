@@ -53,7 +53,9 @@ This command scrapes the last 5 posts of ``/u/User123``, detects his Imgur submi
 Documentation
 -------------
 
-Documentation available at http://reddit-image-scrapper.readthedocs.org/
+Documentation available at readthedocs
+
+http://reddit-image-scrapper.readthedocs.org/
 
 .. _`Python 2`: https://www.python.org/download/releases/2.7/
 .. _`Python 3`: https://www.python.org/download/releases/3.4.1/
