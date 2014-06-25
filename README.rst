@@ -38,10 +38,10 @@ Usage
 After installing the package, the console script ``reddit_scrapper``
 can now be used.
 
-Choose a reddit user and download each of his or her Imgur submissions to your local hard drive
-
 Example
 ~~~~~~~
+
+Choose a reddit user and download each of his or her Imgur submissions to your local hard drive
 
 .. code-block:: bash
 
