@@ -85,17 +85,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Reddit-Image-Scrapper.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/Reddit-Image-Scraper.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Reddit-Image-Scrapper.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/Reddit-Image-Scraper.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/Reddit-Image-Scrapper"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Reddit-Image-Scrapper"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/Reddit-Image-Scraper"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/Reddit-Image-Scraper"
 	@echo "# devhelp"
 
 epub:

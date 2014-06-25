@@ -16,13 +16,13 @@ wheel:
 	python setup.py bdist_wheel
 
 uninstall:
-	pip uninstall Reddit-Image-Scrapper
+	pip uninstall Reddit-Image-Scraper
 
 
 clean:
-	rm -rf reddit_scrapper/*.pyc
+	rm -rf reddit_scraper/*.pyc
 	rm -rf __pycache__
-	rm -rf reddit_scrapper/__pycache__
+	rm -rf reddit_scraper/__pycache__
 	rm -rf build
 	rm -rf *egg-info
 	rm -rf dist

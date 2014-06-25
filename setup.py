@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import reddit_scrapper
+import reddit_scraper
 
 try:
     from setuptools import setup
@@ -7,18 +7,18 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='Reddit-Image-Scrapper',
-    description='Web scrapper for reddit images',
+    name='Reddit-Image-Scraper',
+    description='Web scraper for reddit images',
     author='Rookev',
     url='https://github.com/Rookev/Reddit-Image-Scraper.git',
     include_package_data=True,
     test_require=['nose'],
-    version=reddit_scrapper.__version__,
-    packages=['reddit_scrapper'],
+    version=reddit_scraper.__version__,
+    packages=['reddit_scraper'],
     entry_points={
         'console_scripts':
             [
-                'reddit_scrapper = reddit_scrapper.__main__:main',
+                'reddit_scraper = reddit_scraper.__main__:main',
             ]
         }
 )
