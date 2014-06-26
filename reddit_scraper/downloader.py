@@ -9,7 +9,7 @@ import os
 
 from bs4 import BeautifulSoup
 
-from . import config
+import config
 
 def process_direct_link(url, folder):
     """

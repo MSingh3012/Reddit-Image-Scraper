@@ -1,4 +1,5 @@
-====================
+.. _README:
+
 Reddit-Image-Scraper
 ====================
 
@@ -7,9 +8,11 @@ Setup
 
 Python
 ~~~~~~
+
 `Python 2`_ or `Python 3`_ must be installed on your computer.
 
 Dependencies
+
 ~~~~~~~~~~~~
 To use this script, you will need the libraries `praw`_ and `beautifulsoup`_.
 They can be installed by the ``pip`` command through your command line as follows:
@@ -35,6 +38,7 @@ To install simply clone the github repo and run setup.py
 
 Usage
 ------
+
 After installing the package, the console script ``reddit_scraper``
 can now be used.
 
