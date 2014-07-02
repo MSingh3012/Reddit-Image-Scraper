@@ -1,5 +1,3 @@
-.. _README:
-
 Reddit-Image-Scraper
 ====================
 
@@ -12,8 +10,8 @@ Python
 `Python 2`_ or `Python 3`_ must be installed on your computer.
 
 Dependencies
-
 ~~~~~~~~~~~~
+
 To use this script, you will need the libraries `praw`_ and `beautifulsoup`_.
 They can be installed by the ``pip`` command through your command line as follows:
 
