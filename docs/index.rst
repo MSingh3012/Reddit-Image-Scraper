@@ -13,7 +13,6 @@ Contents:
 
    readme_link
    documentation
-   functions
  
 .. automodule:: downloader
 
