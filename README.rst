@@ -59,7 +59,14 @@ Documentation available at readthedocs
 
 http://reddit-image-scraper.readthedocs.org/
 
+Contributions
+-------------
+
+A more pythonized programming style and documentation with Sphinx was contributed by `Sang Han`_.
+
+
 .. _`Python 2`: https://www.python.org/download/releases/2.7/
 .. _`Python 3`: https://www.python.org/download/releases/3.4.1/
 .. _`praw`: https://github.com/praw-dev/praw
 .. _`beautifulsoup`: http://www.crummy.com/software/BeautifulSoup/
+.. _`Sang Han`: https://github.com/jjangsangy
