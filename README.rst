@@ -1,6 +1,11 @@
 Reddit-Image-Scraper
 ====================
 
+Purpose
+-------
+This python script enables you to pick a reddit user and automatically download all pictures he / she posted in Imgur links.
+The number of posts which are scanned can be specified by a number.
+
 Setup
 -----
 
@@ -35,7 +40,7 @@ To install simply clone the github repo and run setup.py
    $ python setup.py install
 
 Usage
-------
+-----
 
 After installing the package, the console script ``reddit_scraper``
 can now be used.
