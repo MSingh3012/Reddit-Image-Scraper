@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Reddit Image Scraper by Rookev</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Reddit Image Scraper</h1>
+          <h2>Scanning imgur for submissions of reddit users</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Rookev/Reddit-Image-Scraper/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Rookev/Reddit-Image-Scraper/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Rookev/Reddit-Image-Scraper" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="reddit-image-scraper" class="anchor" href="#reddit-image-scraper"><span class="octicon octicon-link"></span></a>Reddit-Image-Scraper</h1>
+
+<h2>
+<a name="purpose" class="anchor" href="#purpose"><span class="octicon octicon-link"></span></a>Purpose</h2>
+
+<p>This python script enables you to pick a reddit user and automatically download all pictures he / she posted in Imgur links.
+The number of posts which are scanned can be specified by a number.</p>
+
+<h2>
+<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h2>
+
+<h3>
+<a name="python" class="anchor" href="#python"><span class="octicon octicon-link"></span></a>Python</h3>
+
+<p><a href="https://www.python.org/download/releases/2.7/">Python 2</a> or <a href="https://www.python.org/download/releases/3.4.1/">Python 3</a> must be installed on your computer.</p>
+
+<h3>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>To use this script, you will need the libraries <a href="https://github.com/praw-dev/praw">praw</a> and <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a>.
+They can be installed by the <code>pip</code> command through your command line as follows:</p>
+
+<pre><code>$ pip install -r requirements.txt
+</code></pre>
+
+<p>After that, you're good to go!</p>
+
+<h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>To install simply clone the github repo and run setup.py</p>
+
+<pre><code># Clone the Repo
+$ git clone https://github.com/Rookev/Reddit-Image-Scraper.git
+
+# Install
+$ python setup.py install
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>After installing the package, the console script <code>reddit_scraper</code>
+can now be used.</p>
+
+<h3>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<p>Choose a reddit user and download each of his or her Imgur submissions to your local hard drive</p>
+
+<pre><code>$ reddit_scraper User123 5
+</code></pre>
+
+<p>This command scrapes the last 5 posts of <code>/u/User123</code>, detects his Imgur submissions and downloads it to your desktop in a newly created folder called <code>/User123/</code></p>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>Documentation available at <a href="http://reddit-image-scraper.readthedocs.org/">readthedocs</a></p>
+
+<h2>
+<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
+
+<p>A more pythonized programming style and documentation with Sphinx was contributed by <a href="https://github.com/jjangsangy">Sang Han</a></p>
+
+<h2>
+<a name="personal-annotation" class="anchor" href="#personal-annotation"><span class="octicon octicon-link"></span></a>Personal annotation</h2>
+
+<p>With this script I wanted to try out some techniques and skills, so it also had some personal goals:</p>
+
+<ul>
+<li>Python (development &amp; publishing / installing)</li>
+<li>Web scraping</li>
+<li>Using the social aspect of GitHub (pull requests, merging)</li>
+</ul>
+        </section>
+
+        <footer>
+          Reddit Image Scraper is maintained by <a href="https://github.com/Rookev">Rookev</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
