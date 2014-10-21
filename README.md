@@ -53,3 +53,11 @@ Documentation available at [readthedocs](http://reddit-image-scraper.readthedocs
 ## Contributions
 
 A more pythonized programming style and documentation with Sphinx was contributed by [Sang Han](https://github.com/jjangsangy)
+
+## Personal annotation
+With this script I wanted to try out some techniques and skills, so it also had some personal goals:
+
+
+* Python (development & publishing / installing)
+* Web scraping
+* Using the social aspect of GitHub (pull requests, merging)
