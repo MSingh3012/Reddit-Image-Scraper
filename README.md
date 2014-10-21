@@ -15,7 +15,9 @@ The number of posts which are scanned can be specified by a number.
 To use this script, you will need the libraries [praw](https://github.com/praw-dev/praw) and [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/).
 They can be installed by the `pip` command through your command line as follows:
 
-  $ pip install -r requirements.txt
+```
+$ pip install -r requirements.txt
+```
 
 After that, you're good to go!
 
