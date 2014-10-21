@@ -15,7 +15,7 @@ The number of posts which are scanned can be specified by a number.
 To use this script, you will need the libraries [praw](https://github.com/praw-dev/praw) and [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/).
 They can be installed by the `pip` command through your command line as follows:
 
-`$ pip install -r requirements.txt`
+  $ pip install -r requirements.txt
 
 After that, you're good to go!
 
@@ -23,13 +23,11 @@ After that, you're good to go!
 
 To install simply clone the github repo and run setup.py
 
-`# Clone the Repo`
+  # Clone the Repo
+  $ git clone https://github.com/Rookev/Reddit-Image-Scraper.git
 
-`$ git clone https://github.com/Rookev/Reddit-Image-Scraper.git`
-
-`# Install`
-
-`$ python setup.py install`
+  # Install
+  $ python setup.py install
 
 ## Usage
 
@@ -40,7 +38,7 @@ can now be used.
 
 Choose a reddit user and download each of his or her Imgur submissions to your local hard drive
 
-`reddit_scraper User123 5`
+  $ reddit_scraper User123 5
 
 This command scrapes the last 5 posts of `/u/User123`, detects his Imgur submissions and downloads it to your desktop in a newly created folder called `/User123/`
 
