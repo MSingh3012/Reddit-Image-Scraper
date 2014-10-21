@@ -24,9 +24,11 @@ After that, you're good to go!
 To install simply clone the github repo and run setup.py
 
 `# Clone the Repo`
+
 `$ git clone https://github.com/Rookev/Reddit-Image-Scraper.git`
 
 `# Install`
+
 `$ python setup.py install`
 
 ## Usage
